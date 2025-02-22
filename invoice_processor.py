@@ -120,23 +120,6 @@ class InvoiceProcessor:
             self.logger.error(f"Error processing invoice {invoice_path}: {str(e)}")
             return {}
 
-    # def process_batch(self, invoice_directory: str) -> List[Dict]:
-    #     """Process all invoices in a directory."""
-    #     self.logger.info(f"Starting batch processing from directory: {invoice_directory}")
-        
-    #     results = []
-    #     invoice_dir = Path(invoice_directory)
-        
-    #     # Process both PDF and image files
-    #     for extension in ['*.pdf', '*.jpg', '*.jpeg', '*.png', '*.gif', '*.webp']:
-    #         for invoice_file in invoice_dir.glob(extension):
-    #             result = self.process_single_invoice(str(invoice_file))
-    #             if result:
-    #                 results.append(result)
-        
-    #     self.logger.info(f"Completed batch processing. Processed {len(results)} invoices")
-    #     return results
-
     def _save_processed_data(self, invoice_path: str, data: Dict):
         """Save processed data to JSON file."""
         try:

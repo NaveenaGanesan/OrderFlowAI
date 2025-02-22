@@ -4,16 +4,27 @@
   "date": "2012-10-14T00:00:00",
   "billing": {
     "name": "Max Jones",
-    "address": ""
+    "address": "",
+    "city": "",
+    "state": "",
+    "postal_code": "",
+    "country": ""
   },
   "shipping": {
-    "address": "Chihuahua, Chihuahua, Mexico",
+    "address": "",
+    "city": "Chihuahua",
+    "state": "Chihuahua",
+    "postal_code": "",
+    "country": "Mexico",
     "mode": "First Class",
     "cost": 80.62
   },
   "items": [
     {
       "description": "Sharp Fax and Copier, Color",
+      "category": "Copiers",
+      "sub_category": "Technology",
+      "product_id": "TEC-CO-5993",
       "quantity": 3.0,
       "unit_price": 339.4,
       "amount": 1018.2

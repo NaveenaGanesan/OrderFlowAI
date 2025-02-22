@@ -17,9 +17,9 @@ class InvoiceExtractor:
 - Order ID
 - Date
 - Bill to (customer name and address)
-- Ship to (shipping address)
+- Ship to (detailed shipping address including city, state, postal code, country)
 - Shipping mode
-- Items (with quantity, unit price, and total amount)
+- Items (with product details including category, sub-category, product ID, quantity, unit price, and total amount)
 - Subtotal
 - Shipping cost
 - Total amount
@@ -32,16 +32,27 @@ Please return ONLY a valid JSON object with these exact keys, no other text:
     "date": "",
     "billing": {
         "name": "",
-        "address": ""
+        "address": "",
+        "city": "",
+        "state": "",
+        "postal_code": "",
+        "country": ""
     },
     "shipping": {
         "address": "",
+        "city": "",
+        "state": "",
+        "postal_code": "",
+        "country": "",
         "mode": "",
         "cost": 0.00
     },
     "items": [
         {
             "description": "",
+            "category": "",
+            "sub_category": "",
+            "product_id": "",
             "quantity": 0,
             "unit_price": 0.00,
             "amount": 0.00
