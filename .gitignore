@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+.DS_Store
+
+# Virtual Environment
+myenv/
+.env
+
+# Project specific
+# results/processed_invoices/*.json
+# results/processed_invoices/*.log
+Datasets/PDF_Invoice_Folder/*
+
+# Logs
+*.log 
