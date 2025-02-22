@@ -6,13 +6,10 @@ import logging
 from datetime import datetime
 import mimetypes
 from invoice_extractor import InvoiceExtractor
-from dotenv import load_dotenv
 
 import pdf2image  # For converting PDF to images
 from PIL import Image
 import io
-
-load_dotenv()
 
 class InvoiceProcessor:
     def __init__(self, api_key: str, output_dir: str = "results/processed_invoices"):
@@ -134,21 +131,3 @@ class InvoiceProcessor:
         except Exception as e:
             self.logger.error(f"Error saving processed data: {str(e)}")
 
-def process_invoice(api_key: str, invoice_path: str):
-    """Process a sample invoice and print the results."""
-    processor = InvoiceProcessor(api_key)
-    result = processor.process_single_invoice(invoice_path)
-    print("\nExtracted Invoice Data:")
-    print(json.dumps(result, indent=2))
-    return result
-
-if __name__ == "__main__":
-    # Initialize the processor with your API key
-    api_key = os.getenv("ANTHROPIC_API_KEY")
-    if not api_key:
-        print("Please set ANTHROPIC_API_KEY environment variable")
-        exit(1)
-        
-    # Process a single invoice
-    invoice_path = "Datasets/PDF_Invoice_Folder/invoice_Max Jones_5179.pdf"
-    process_invoice(api_key, invoice_path)
