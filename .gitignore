@@ -8,7 +8,7 @@ myenv/
 
 # Project specific
 # results/processed_invoices/*.json
-# results/processed_invoices/*.log
+results/processed_invoices/*.log
 Datasets/PDF_Invoice_Folder/*
 
 # Logs
