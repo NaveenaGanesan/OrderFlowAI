@@ -1,0 +1,69 @@
+# Instructions to Run Docker-Compose
+
+1. Ensure Docker and Docker-Compose are installed on your system.
+    - Verify installation by running:
+      ```
+      docker --version
+      docker-compose --version
+      ```
+
+2. Navigate to the directory containing the `docker-compose.yml` file:
+    ```
+    cd OrderFlowAI
+    ```
+
+3. Start the services defined in the `docker-compose.yml` file:
+    ```
+    docker-compose up
+    ```
+    - Use the `-d` flag to run containers in detached mode:
+      ```
+      docker-compose up -d
+      ```
+
+4. To view running containers:
+    ```
+    docker-compose ps
+    ```
+
+5. To stop the services:
+    ```
+    docker-compose down
+    ```
+
+6. If you need to rebuild the images (e.g., after making changes to the Dockerfile):
+    ```
+    docker-compose up --build
+    ```
+7. For logs:
+    ```
+    docker-compose logs
+    ```
+
+8. For logs of a specific service:
+    ```
+    docker-compose logs <service_name>
+    ```
+
+    ```
+    docker-compose logs elasticsearch
+    ```
+
+9. Remove volumes and start fresh(deletes data):
+
+```bash
+docker-compose down -v 
+```
+
+10. To scale a specific service:
+    ```
+    docker-compose up --scale <service_name>=<number_of_instances>
+    ```
+
+11. Clean up unused images, volumes, and networks:
+    ```
+    docker system prune
+    ```
+
+
+
