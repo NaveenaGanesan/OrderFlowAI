@@ -16,14 +16,15 @@ class InvoiceExtractor:
 - Invoice number
 - Order ID
 - Date
-- Bill to (customer name and address)
+- Bill to (customer name))
 - Ship to (detailed shipping address including city, state, postal code, country)
 - Shipping mode
-- Items (with product details including category, sub-category, product ID, quantity, unit price, and total amount)
+- Items (with product details including product name, sub-category, category, product ID, quantity, unit price, and total amount)
 - Subtotal
 - Shipping cost
 - Total amount
 - Any additional fees or discounts
+- Balance Due
 
 Please return ONLY a valid JSON object with these exact keys, no other text:
 {
@@ -31,15 +32,9 @@ Please return ONLY a valid JSON object with these exact keys, no other text:
     "order_id": "",
     "date": "",
     "billing": {
-        "name": "",
-        "address": "",
-        "city": "",
-        "state": "",
-        "postal_code": "",
-        "country": ""
+        "name": ""
     },
     "shipping": {
-        "address": "",
         "city": "",
         "state": "",
         "postal_code": "",
@@ -49,9 +44,9 @@ Please return ONLY a valid JSON object with these exact keys, no other text:
     },
     "items": [
         {
-            "description": "",
-            "category": "",
+            "product_name": "",
             "sub_category": "",
+            "category": "",
             "product_id": "",
             "quantity": 0,
             "unit_price": 0.00,
@@ -66,7 +61,8 @@ Please return ONLY a valid JSON object with these exact keys, no other text:
                 "amount": 0.00
             }
         ],
-        "total": 0.00
+        "total": 0.00,
+        "balance_due": 0.00
     }
 }"""
 
@@ -159,7 +155,7 @@ Please return ONLY a valid JSON object with these exact keys, no other text:
             # Convert string amounts to float
             if "financials" in data:
                 financials = data["financials"]
-                for key in ["subtotal", "total"]:
+                for key in ["subtotal", "total", "balance_due"]:
                     if key in financials:
                         try:
                             financials[key] = float(str(financials[key]).replace("$", "").replace(",", ""))

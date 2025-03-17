@@ -3,9 +3,15 @@
   "order_id": "MX-2012-MJ1774082-41196",
   "date": "2012-10-14T00:00:00",
   "billing": {
-    "name": "Max Jones"
+    "name": "Max Jones",
+    "address": "",
+    "city": "",
+    "state": "",
+    "postal_code": "",
+    "country": ""
   },
   "shipping": {
+    "address": "",
     "city": "Chihuahua",
     "state": "Chihuahua",
     "postal_code": "",
@@ -15,9 +21,9 @@
   },
   "items": [
     {
-      "product_name": "Sharp Fax and Copier, Color",
-      "sub_category": "Copiers",
-      "category": "Technology",
+      "description": "Sharp Fax and Copier, Color",
+      "category": "Copiers",
+      "sub_category": "Technology",
       "product_id": "TEC-CO-5993",
       "quantity": 3.0,
       "unit_price": 339.4,
@@ -32,7 +38,6 @@
         "amount": -2.04
       }
     ],
-    "total": 1096.78,
-    "balance_due": 1096.78
+    "total": 1096.78
   }
 }

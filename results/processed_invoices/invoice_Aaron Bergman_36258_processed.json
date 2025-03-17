@@ -1,0 +1,38 @@
+{
+  "invoice_number": "36258",
+  "order_id": "CA-2012-AB10015140-40974",
+  "date": "2012-03-06T00:00:00",
+  "billing": {
+    "name": "Aaron Bergman"
+  },
+  "shipping": {
+    "city": "Seattle",
+    "state": "Washington",
+    "postal_code": "98103",
+    "country": "United States",
+    "mode": "First Class",
+    "cost": 11.13
+  },
+  "items": [
+    {
+      "product_name": "Global Push Button Manager's Chair, Indigo",
+      "sub_category": "Chairs",
+      "category": "Furniture",
+      "product_id": "FUR-CH-4421",
+      "quantity": 1.0,
+      "unit_price": 48.71,
+      "amount": 48.71
+    }
+  ],
+  "financials": {
+    "subtotal": 48.71,
+    "additional_charges": [
+      {
+        "description": "Discount (20%)",
+        "amount": -9.74
+      }
+    ],
+    "total": 50.1,
+    "balance_due": 50.1
+  }
+}

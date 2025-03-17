@@ -33,6 +33,14 @@ source myenv/bin/activate
 pip install -r requirements.txt
 ```
 
+or 
+
+```bash
+chmod +x install_dependencies.sh
+./install_dependencies.sh
+```
+
+
 4. Set up your environment variables:
 
 ```bash
@@ -42,13 +50,13 @@ echo "ANTHROPIC_API_KEY=<your-api-key>" >> .env
 5. Run the script:
 
 ```bash
-python invoice_processor.py
+python3 invoice_pipeline.py
 ```
 
 ## Requirements
 
 - Python 3.8+
-- Poppler (for PDF processing)
+- pdf2image (for PDF processing)
 - Anthropic API key
 
 ## Error Handling

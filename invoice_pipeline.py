@@ -37,10 +37,7 @@ class InvoiceProcessingPipeline:
         try:
             result = self.processor.process_single_invoice(invoice_path)
             self.logger.info("Successfully processed invoice")
-            self.logger.debug(f"Extracted data: {json.dumps(result, indent=2)}")
-            
-            print("\nExtracted Invoice Data:")
-            print(json.dumps(result, indent=2))
+            self.logger.info(f"Extracted data: {json.dumps(result, indent=2)}")
             return result
             
         except Exception as e:
@@ -56,7 +53,7 @@ if __name__ == "__main__":
             exit(1)
         
         # Process a single invoice
-        invoice_path = "Datasets/PDF_Invoice_Folder/invoice_Max Jones_30900.pdf"
+        invoice_path = "Datasets/PDF_Invoice_Folder/invoice_Aaron Bergman_36258.pdf"
         pipeline = InvoiceProcessingPipeline(api_key)
         pipeline.process_invoice(invoice_path)
         
