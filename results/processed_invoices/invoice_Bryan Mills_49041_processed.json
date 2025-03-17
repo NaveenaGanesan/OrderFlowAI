@@ -1,0 +1,33 @@
+{
+  "invoice_number": "49041",
+  "order_id": "AG-2012-BM17853-41052",
+  "date": "2012-05-23T00:00:00",
+  "billing": {
+    "name": "Bryan Mills"
+  },
+  "shipping": {
+    "city": "Guelma",
+    "state": "Guelma",
+    "postal_code": "",
+    "country": "Algeria",
+    "mode": "First Class",
+    "cost": 78.7
+  },
+  "items": [
+    {
+      "product_name": "Sauder Classic Bookcase, Pine",
+      "sub_category": "Bookcases",
+      "category": "Furniture",
+      "product_id": "FUR-BO-5950",
+      "quantity": 2.0,
+      "unit_price": 874.68,
+      "amount": 1749.36
+    }
+  ],
+  "financials": {
+    "subtotal": 1749.36,
+    "additional_charges": [],
+    "total": 1828.06,
+    "balance_due": 1828.06
+  }
+}

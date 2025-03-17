@@ -3,15 +3,9 @@
   "order_id": "IN-2012-MJ177407-41247",
   "date": "2012-12-04T00:00:00",
   "billing": {
-    "name": "Max Jones",
-    "address": "",
-    "city": "",
-    "state": "",
-    "postal_code": "",
-    "country": ""
+    "name": "Max Jones"
   },
   "shipping": {
-    "address": "",
     "city": "Newcastle",
     "state": "New South Wales",
     "postal_code": "",
@@ -21,9 +15,9 @@
   },
   "items": [
     {
-      "description": "Epson Phone, Wireless",
-      "category": "Machines",
+      "product_name": "Epson Phone, Wireless",
       "sub_category": "Technology",
+      "category": "Machines",
       "product_id": "TEC-MA-4204",
       "quantity": 10.0,
       "unit_price": 809.7,
@@ -32,12 +26,8 @@
   ],
   "financials": {
     "subtotal": 8097.0,
-    "additional_charges": [
-      {
-        "description": "Shipping",
-        "amount": 67.75
-      }
-    ],
-    "total": 8164.75
+    "additional_charges": [],
+    "total": 8164.75,
+    "balance_due": 8164.75
   }
 }

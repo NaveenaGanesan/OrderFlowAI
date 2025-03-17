@@ -1,0 +1,33 @@
+{
+  "invoice_number": "21030",
+  "order_id": "IN-2012-BM1178527-40977",
+  "date": "2012-03-09T00:00:00",
+  "billing": {
+    "name": "Bryan Mills"
+  },
+  "shipping": {
+    "city": "Zhenjiang",
+    "state": "Jiangsu",
+    "postal_code": "",
+    "country": "China",
+    "mode": "First Class",
+    "cost": 248.59
+  },
+  "items": [
+    {
+      "product_name": "Brother Fax Machine, Laser",
+      "sub_category": "Copiers",
+      "category": "Technology",
+      "product_id": "TEC-CO-3598",
+      "quantity": 4.0,
+      "unit_price": 1274.16,
+      "amount": 5096.64
+    }
+  ],
+  "financials": {
+    "subtotal": 5096.64,
+    "additional_charges": [],
+    "total": 5345.23,
+    "balance_due": 5345.23
+  }
+}

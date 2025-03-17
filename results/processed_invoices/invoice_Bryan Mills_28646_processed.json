@@ -1,0 +1,33 @@
+{
+  "invoice_number": "28646",
+  "order_id": "IN-2012-BM1178558-41124",
+  "date": "2012-08-03T00:00:00",
+  "billing": {
+    "name": "Bryan Mills"
+  },
+  "shipping": {
+    "city": "Tiruchchirappalli",
+    "state": "Tamil Nadu",
+    "postal_code": "",
+    "country": "India",
+    "mode": "Standard Class",
+    "cost": 87.26
+  },
+  "items": [
+    {
+      "product_name": "Sharp Copy Machine, Color",
+      "sub_category": "Copiers",
+      "category": "Technology",
+      "product_id": "TEC-CO-5990",
+      "quantity": 4.0,
+      "unit_price": 963.36,
+      "amount": 3853.44
+    }
+  ],
+  "financials": {
+    "subtotal": 3853.44,
+    "additional_charges": [],
+    "total": 3940.7,
+    "balance_due": 3940.7
+  }
+}

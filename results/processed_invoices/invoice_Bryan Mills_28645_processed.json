@@ -1,0 +1,33 @@
+{
+  "invoice_number": "28645",
+  "order_id": "IN-2012-BM1178558-41124",
+  "date": "2012-08-03T00:00:00",
+  "billing": {
+    "name": "Bryan Mills"
+  },
+  "shipping": {
+    "city": "Tiruchchirappalli",
+    "state": "Tamil Nadu",
+    "postal_code": "",
+    "country": "India",
+    "mode": "Standard Class",
+    "cost": 179.62
+  },
+  "items": [
+    {
+      "product_name": "Bush Library with Doors, Metal",
+      "sub_category": "Bookcases",
+      "category": "Furniture",
+      "product_id": "FUR-BO-3639",
+      "quantity": 4.0,
+      "unit_price": 1455.12,
+      "amount": 5820.48
+    }
+  ],
+  "financials": {
+    "subtotal": 5820.48,
+    "additional_charges": [],
+    "total": 6000.1,
+    "balance_due": 6000.1
+  }
+}
