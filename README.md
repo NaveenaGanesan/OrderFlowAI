@@ -74,7 +74,7 @@ python3 invoice_pipeline.py query "query_string"
 python3 invoice_pipeline.py get invoice_number
 ```
 ```bash
-python3 invoice_pipeline.py delete "query_string"
+python3 invoice_pipeline.py delete invoice_number
 ```
 ## Requirements
 
