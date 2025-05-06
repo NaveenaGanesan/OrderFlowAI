@@ -1,0 +1,33 @@
+{
+  "invoice_number": "6712",
+  "order_id": "MX-2012-GT1471039-40975",
+  "date": "2012-03-07T00:00:00",
+  "billing": {
+    "name": "Greg Tran"
+  },
+  "shipping": {
+    "city": "San Salvador",
+    "state": "San Salvador",
+    "postal_code": "",
+    "country": "El Salvador",
+    "mode": "Standard Class",
+    "cost": 145.5
+  },
+  "items": [
+    {
+      "product_name": "Harbour Creations Executive Leather Armchair, Red",
+      "sub_category": "Chairs",
+      "category": "Furniture",
+      "product_id": "FUR-CH-4532",
+      "quantity": 9.0,
+      "unit_price": 2855.16,
+      "amount": 25696.44
+    }
+  ],
+  "financials": {
+    "subtotal": 25696.44,
+    "additional_charges": [],
+    "total": 25841.94,
+    "balance_due": 25841.94
+  }
+}
