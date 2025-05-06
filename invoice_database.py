@@ -10,6 +10,7 @@ from elasticsearch import Elasticsearch
 from bson import ObjectId
 from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
+import time
 
 load_dotenv()
 logger = logging.getLogger(__name__)
@@ -45,7 +46,12 @@ class InvoiceDatabase:
         try:
             self.es_uri = es_uri or os.getenv("ES_URI")
             self.index_name = os.getenv("ES_INDEX")
-            self.es_client = Elasticsearch([self.es_uri])
+            print(f"Connecting to Elasticsearch at {self.es_uri} with index {self.index_name}")
+            if not self.es_uri:
+                raise ValueError("Elasticsearch URI is not provided")
+            if not self.index_name: 
+                raise ValueError("Elasticsearch index name is not provided")
+            self.es_client = Elasticsearch(self.es_uri)
             if not self.es_client.ping():
                 raise ConnectionError("Could not connect to Elasticsearch")
             logger.info("Successfully connected to Elasticsearch")

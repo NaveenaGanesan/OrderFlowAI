@@ -156,7 +156,7 @@ if __name__ == "__main__":
             exit(1)
         
         # Process a single invoice
-        invoice_path = "Datasets/PDF_Invoice_Folder/invoice_Bryan Mills_49041.pdf"
+        invoice_path = "Datasets/PDF_Invoice_Folder/invoice_Alan Shonely_31902.pdf"
         pipeline = InvoiceProcessingPipeline(api_key)
 
         # Set up argument parser
